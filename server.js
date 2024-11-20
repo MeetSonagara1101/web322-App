@@ -1,14 +1,14 @@
 /*********************************************************************************
-WEB322 – Assignment 02
-I declare that this assignment is my own work in accordance with Seneca Academic Policy.  
-No part of this assignment has been copied manually or electronically from any other source 
-(including 3rd party web sites) or distributed to other students.
 
-Name: Meet Hitesh Sonagara 
-Student ID: 122208226 
-Date: 29/10/2024
-Cyclic Web App URL: https://web322-app-msonagara-iwyks5vnj-meet-hitesh-sonagaras-projects.vercel.app/index.html
-GitHub Repository URL: https://github.com/MeetSonagara1101/web322-app
+WEB322 – Assignment 02
+I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part *  of this assignment has been copied manually or electronically from any other source (including 3rd party web sites) or distributed to other students.
+
+Name: Janakan Sureshraj_ 
+Student ID: 153073226
+Date: 7th of June 2024
+Vercel Web App URL: https://web322-app-janakan.vercel.app
+GitHub Repository URL: https://github.com/JanakanSureshraj/WEB322-App.git
+
 ********************************************************************************/ 
 const express = require('express');
 const path = require('path');
@@ -20,7 +20,7 @@ const streamifier = require('streamifier');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // cloudinary configuraton for image storage
 cloudinary.config({
@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 
 // about 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views', '/about.html'));
+    res.sendFile(path.join(__dirname, 'views', 'about.html'));
 });
 
 // shop
@@ -78,7 +78,7 @@ app.get('/item/id', (req, res) => {
 
 // add item
 app.get('/items/add', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views', '/addItem.html'));
+    res.sendFile(path.join(__dirname, 'views', 'addItem.html'));
 });
 
 // categories
